@@ -319,15 +319,15 @@ class Stg_Meta_Pivot : public Strategy {
     // IndicatorSignal _signals = _indi.GetSignals(4, _shift);
     IndicatorDataEntry _entry = _indi[_pp_shift + 1];
     float _curr_price = (float)_chart.GetPrice(PRICE_TYPICAL, _pp_shift);
-    float _pp = _entry.GetValue<float>((int)INDI_PIVOT_PP);
-    float _r1 = _entry.GetValue<float>((int)INDI_PIVOT_R1);
-    float _r2 = _entry.GetValue<float>((int)INDI_PIVOT_R2);
-    float _r3 = _entry.GetValue<float>((int)INDI_PIVOT_R3);
-    float _r4 = _entry.GetValue<float>((int)INDI_PIVOT_R4);
-    float _s1 = _entry.GetValue<float>((int)INDI_PIVOT_S1);
-    float _s2 = _entry.GetValue<float>((int)INDI_PIVOT_S2);
-    float _s3 = _entry.GetValue<float>((int)INDI_PIVOT_S3);
-    float _s4 = _entry.GetValue<float>((int)INDI_PIVOT_S4);
+    float _pp = _entry.GetValue<float>((int)META_PIVOT_INDI_PIVOT_PP);
+    float _r1 = _entry.GetValue<float>((int)META_PIVOT_INDI_PIVOT_R1);
+    float _r2 = _entry.GetValue<float>((int)META_PIVOT_INDI_PIVOT_R2);
+    float _r3 = _entry.GetValue<float>((int)META_PIVOT_INDI_PIVOT_R3);
+    float _r4 = _entry.GetValue<float>((int)META_PIVOT_INDI_PIVOT_R4);
+    float _s1 = _entry.GetValue<float>((int)META_PIVOT_INDI_PIVOT_S1);
+    float _s2 = _entry.GetValue<float>((int)META_PIVOT_INDI_PIVOT_S2);
+    float _s3 = _entry.GetValue<float>((int)META_PIVOT_INDI_PIVOT_S3);
+    float _s4 = _entry.GetValue<float>((int)META_PIVOT_INDI_PIVOT_S4);
     if (_curr_price > _s1 && _curr_price < _r1) {
       // Price value is between S1 and R1 pivot range.
       _strat_ref = strats.GetByKey(0);
