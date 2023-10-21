@@ -6,7 +6,7 @@
 
 /**
  * @file
- * Implements RSI meta strategy.
+ * Implements Pivot meta strategy.
  */
 
 // Includes the main code.
