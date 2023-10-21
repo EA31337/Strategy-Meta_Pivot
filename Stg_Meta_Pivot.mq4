@@ -6,8 +6,8 @@
 
 /**
  * @file
- * Implements RSI meta strategy.
+ * Implements Pivot meta strategy.
  */
 
 // Includes the main code.
-#include "Stg_Meta_RSI.mq5"
+#include "Stg_Meta_Pivot.mq5"
