@@ -10,9 +10,9 @@
 // User input params.
 INPUT2_GROUP("Meta Pivot strategy: main params");
 INPUT2 ENUM_STRATEGY Meta_Pivot_Strategy_Pivot1 = STRAT_MA_BREAKOUT;  // Strategy for Pivot in range S1-R1
-INPUT2 ENUM_STRATEGY Meta_Pivot_Strategy_Pivot2 = STRAT_OSCILLATOR;   // Strategy for Pivot in range S2-R2
-INPUT2 ENUM_STRATEGY Meta_Pivot_Strategy_Pivot3 = STRAT_MA_TREND;     // Strategy for Pivot in range S3-R3
-INPUT2 ENUM_STRATEGY Meta_Pivot_Strategy_Pivot4 = STRAT_BANDS;        // Strategy for Pivot in and beyond range S4-R4
+INPUT2 ENUM_STRATEGY Meta_Pivot_Strategy_Pivot2 = STRAT_CHAIKIN;      // Strategy for Pivot in range S2-R2
+INPUT2 ENUM_STRATEGY Meta_Pivot_Strategy_Pivot3 = STRAT_AWESOME;      // Strategy for Pivot in range S3-R3
+INPUT2 ENUM_STRATEGY Meta_Pivot_Strategy_Pivot4 = STRAT_CHAIKIN;      // Strategy for Pivot in and beyond range S4-R4
 INPUT3_GROUP("Meta Pivot strategy: common params");
 INPUT3 float Meta_Pivot_LotSize = 0;                // Lot size
 INPUT3 int Meta_Pivot_SignalOpenMethod = 0;         // Signal open method
